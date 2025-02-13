@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
-import { useGLTF, useTexture } from "@react-three/drei";
-import { useEffect } from "react";
 import * as THREE from "three";
+import React, { useEffect } from "react";
+import { useGLTF, useTexture } from "@react-three/drei";
 
 function PhoneBody(props) {
-  const { nodes, materials } = useGLTF("../../public/models/scene.glb");
+  const { nodes, materials } = useGLTF("/models/scene.glb");
 
   const texture = useTexture(props.item.img);
 
@@ -22,6 +21,7 @@ function PhoneBody(props) {
       material[1].needsUpdate = true;
     });
   }, [materials, props.item]);
+
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -138,7 +138,6 @@ function PhoneBody(props) {
       >
         <meshStandardMaterial roughness={1} map={texture} />
       </mesh>
-
       <mesh
         castShadow
         receiveShadow
@@ -250,4 +249,4 @@ function PhoneBody(props) {
 
 export default PhoneBody;
 
-useGLTF.preload("../../public/models/scene.glb");
+useGLTF.preload("/models/scene.glb");

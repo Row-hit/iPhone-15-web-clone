@@ -12,8 +12,6 @@ dist
 dist-ssr
 *.local
 
-eslint.config.js
-vite.config.js
 
 # Editor directories and files
 .vscode/*
@@ -26,5 +24,4 @@ vite.config.js
 *.sln
 *.sw?
 
-# Sentry Config File
-.env.sentry-build-plugin
+
