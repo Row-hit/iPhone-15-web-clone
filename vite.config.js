@@ -5,12 +5,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), sentryVitePlugin({
-    org: "code-fusion",
-    project: "javascript-react"
-  })],
-
-  build: {
-    sourcemap: true
-  }
+  plugins: [react(), tailwindcss()],
+  base: "/iPhone-15-web-clone",
 });

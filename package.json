@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Row-hit.github.io/iPhone-15-web-clone",
+  "homepage": "https://Row-hit.github.io/iPhone-15-web-clone/",
   "name": "apple-15",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -16,8 +16,6 @@
     "@gsap/react": "^2.1.2",
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
-    "@sentry/react": "^9.0.0",
-    "@sentry/vite-plugin": "^3.1.2",
     "@tailwindcss/vite": "^4.0.3",
     "gsap": "^3.12.7",
     "react": "^18.3.1",
