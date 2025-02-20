@@ -1,14 +1,14 @@
 {
-  "homepage": "https://Row-hit.github.io/iPhone-15-web-clone/",
+  "homepage": "https://github.com/Row-hit/iPhone-15-web-clone.git",
   "name": "apple-15",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
